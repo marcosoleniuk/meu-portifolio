@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="author" content="Marcos Oleniuk">
+        <meta name="description"
+            content="Portfólio pessoal de Marcos Oleniuk, desenvolvedor Java Backend. Projetos Front-ends e Back-ends, tecnologias e contato.">
+        <meta name="keywords"
+            content="Marcos Oleniuk, portfólio, desenvolvedor, programação, Java, Spring Boot, React.js, HTML, CSS, JavaScript, sistemas">
+        <title>Contato - Marcos Oleniuk</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap"
+            rel="stylesheet">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/abc.png" type="image/x-icon">
+    </head>
+    <body>
+        <!-- Header dinâmico -->
+        <div data-include="header.html"></div>
+
+        <!-- Ghost para espaçamento do header fixo -->
+        <section class="ghost ghost-padrao"></section>
+
+        <!-- Seção Contato -->
+        <main>
+            <section id="contato">
+                <h2>Contato</h2>
+                <div class="container2">
+                    <div class="contato">
+                        <div class="title">
+                            <h3>Mensagem</h3>
+                            <div class="mail"><i
+                                    class="fas fa-envelope fa-3x"></i></div>
+                        </div>
+                        <div class="form">
+                            <form id="form-contato">
+                                <div class="form-items">
+                                    <input type="text" id="nome" class="input" placeholder="Nome" required>
+                                    <i class="fas fa-user mail"></i>
+                                </div>
+                                <div class="form-items">
+                                    <input type="email" id="email" class="input" placeholder="Email" required>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="form-items">
+                                    <textarea id="mensagem" class="input message" cols="30" rows="10"
+                                        placeholder="Mensagem" required></textarea>
+                                </div>
+                                <button type="submit" class="btn">ENVIAR</button>
+                                <div id="status-mensagem" style="margin-top:10px;"></div>
+                            </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer dinâmico -->
+        <div data-include="footer.html"></div>
+
+        <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/includes.js"></script>
+        <script src="js/contato.js"></script>
+    </body>
+</html>
